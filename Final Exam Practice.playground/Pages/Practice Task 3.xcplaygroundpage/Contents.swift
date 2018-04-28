@@ -71,34 +71,23 @@ let deepRed = Color(hue: 7, saturation: 97, brightness: 72, alpha: 100)
     canvas.drawText(message: "at the door: £2.50", size: 10, x: 280, y: 540, kerning: -0.5)
 
 
-for x in stride(from: 0, to: 400, by: 50){
-    canvas.lineColor = Color.white
-    canvas.drawLine(fromX: x, fromY: 0, toX: x, toY: 600)
-}
-
-for y in stride(from: 0, to: 600, by: 50){
-    canvas.drawLine(fromX: 0, fromY: y, toX: 400, toY: y)
-}
-
-
-
 //move the origin
 
-canvas.translate(byX: 13, byY: 400)
+canvas.translate(byX: 15, byY: 390)
 
     //fade loop
     
-    for a in stride(from: 100, to: 0, by: -3){
+    for a in stride(from: 100, to: 0, by: -5){
         
         canvas.textColor = Color.init(hue: 0, saturation: 0, brightness: 0, alpha: a)
         
         //undertones logo
         
-        canvas.drawText(message: "undertones", size: 70, x: 0, y: 0, kerning: 0)
+        canvas.drawText(message: "undertones", size: 70, x: 0, y: -30, kerning: 0)
         
         //rotate
         
-        canvas.rotate(by: -5)
+        canvas.rotate(by: -4.736842105263158)
         
         
     }
